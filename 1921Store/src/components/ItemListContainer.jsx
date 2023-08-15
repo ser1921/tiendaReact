@@ -1,5 +1,14 @@
-export const ItemListContainer = ({ greetings }) => {
+import { useEffect, useState } from "react";
+ 
+const ItemListContainer =(props) =>{   
+    
+
     return (
-        <p style={{ color: '#5cdb95', fontSize: 30, textAlign: "center" }}>{greetings}</p>
-    );
-};
+        <section>
+            <h2>Nuestros Productos:</h2>
+            {props.children}
+        </section>
+    )
+}
+
+export {ItemListContainer}

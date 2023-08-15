@@ -2,14 +2,21 @@ import { useState } from 'react';
 import { NavBar } from './components/NavBar';
 import { ItemListContainer } from './components/ItemListContainer';
 
+import Productos from './routes/Productos';
+
 
 function App() {
+  
+
+  
   return (
       <div>
         
           <NavBar />
           
-          <ItemListContainer greetings="1921 Sports" />
+          <ItemListContainer>
+            <Productos></Productos>
+          </ItemListContainer>
       </div>
   );
 }
